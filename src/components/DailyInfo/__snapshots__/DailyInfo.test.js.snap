@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DailyInfo renders 1`] = `
+<section
+  id="dailyInfo"
+>
+  <article
+    id="time-signout"
+  >
+    <div
+      id="time"
+    >
+      <h2>
+        11:46
+      </h2>
+    </div>
+    <div
+      id="signout"
+    >
+      <button
+        onClick={[Function]}
+      >
+        Sign Out
+      </button>
+    </div>
+  </article>
+  <h1
+    id="welcome"
+  >
+    Welcome, 
+    <span>
+      FREDDY
+    </span>
+  </h1>
+  <h2
+    id="today"
+  >
+    TODAY
+  </h2>
+  <TodoList
+    todoTasks={
+      Array [
+        "Book stuff",
+        "Plan meals",
+        "Talk to Cybel",
+      ]
+    }
+  />
+</section>
+`;

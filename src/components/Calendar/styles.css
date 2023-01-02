@@ -1,0 +1,1201 @@
+/* StartScreen */
+
+#startScreen {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#startScreenLogo p {
+    font-size: 50px;
+    margin-top: 0;
+    color: #003B46;
+}
+
+.formButton {
+    width: 320px;
+    height: 65px;
+    background-color: rgb(0, 59, 70);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.formButton:hover {
+    transform: scale(1.05);
+}
+
+.formButton:active {
+    transform: scale(0.95, 0.95);
+}
+
+/* Sign In AND Register pages */
+
+.submitFormPopUp {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    background-color: rgb(0, 59, 70, 0.8);
+    color: white;
+}
+
+/* Sign In */
+
+#signin {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.logo {
+    margin: 0 auto;
+    width: 100px;
+    height: auto;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form p {
+    color: #66A5AD;
+}
+
+.alternateFormLink {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.alternateFormLink:hover {
+    color: #C4DFE6;
+}
+
+.alternateFormLink:active {
+    color: #003B46;
+}
+
+.inputField, .dropdownWrapper {
+    width: 550px;
+    height: 70px;
+    background-color: #C4DFE6;
+    color: #66A5AD;
+    border: none;
+    border-radius: 50px;
+    padding: 0 30px;
+    margin: 10px auto;
+    outline: none;
+    font-size: 20px;
+}
+
+.dropdown {
+    width: 550px;
+    height: 70px;
+    border: 0px;
+    outline:none;
+    background-color: transparent;
+    font-size: 20px;
+    color: #66A5AD
+}
+
+.inputField::placeholder { 
+    color: rgba(102, 165, 173, 0.5); 
+}
+
+.signinError {
+    width: 60%;
+    border: 2px solid #003B46;
+    margin-bottom: 10px;
+}
+
+.signinError p {
+    color: white;
+}
+
+/* Register */
+
+#register {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative
+}
+
+.hide {
+    display: none
+}
+
+.show {
+    display: block
+}
+
+.formError {
+    width: 60%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formError p {
+    color: white;
+    font-size: 20px;
+}
+
+.formError .errorIcon {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    margin-right: 20px;
+}
+
+.formError .errorIcon img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Home Page */
+
+.homePage {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Calendar */
+
+abbr[title] {
+    text-decoration: none;
+  }
+  
+.react-calendar {
+    width: 40%;
+    height: 80vh;
+    margin: 0;
+}
+
+button, abbr {
+    font-family: Montserrat;
+}
+
+.react-calendar {
+    background: none;
+    border: none;
+}
+
+.react-calendar__tile {
+    font-size: 15px;
+    height: 80px;
+}
+
+.react-calendar__month-view__days__day {
+    color: white;
+    text-align: top;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth abbr {
+    color: darkgray;
+}
+
+/* Daily Info */
+
+#dailyInfo {
+    width: 40%;
+}
+
+#welcome-signout {
+    display: flex;
+    justify-content: center;
+}
+
+#signout {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#signout button {
+    margin-top: 10px;
+    font-size: 15px;
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background: #003B46;
+    color: white;
+    box-shadow: 1px 5px 10px #07575B;
+    outline: none;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+#signout button:hover {
+    transform: scale(1.05, 1.05);
+}
+
+#signout button:active {
+    transform: scale(0.95, 0.95);
+}
+
+/* Todo List */
+
+#welcome {
+    color: #07575B;
+    font-size: 25px;
+    margin: 22px;
+}
+
+#welcome span {
+    color: #003B46;
+    font-weight: bolder;
+}
+
+#today {
+    text-align: left;
+    width: 80px;
+    border-bottom: 4px solid #C4DFE6;
+}
+
+#addTask {
+    display: flex;
+    padding: 10px;
+    padding-left: 0;
+}
+
+#addTask input {
+    background: none;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+#addTask input::placeholder {
+    color: rgba(255, 255, 255, 0.35);
+}
+
+#addTask button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 23px;
+    font-weight: bolder;
+    background-color: #003B46;
+    border: none;
+    color: #C4DFE6;
+}
+
+#addTask input, #addTask button {
+    outline: none;
+}
+
+/* List Items */
+
+#noTasksMessage {
+   text-align: left;
+   margin: 0;
+   margin-left: 25px;
+}
+
+#thingsToDo {
+    height: auto;
+    max-height: 270px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+}
+
+.list {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.circleButton {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #66A5AD;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.tickIcon {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    visibility: hidden;
+}
+
+.tickIcon img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.circleButton:hover .tickIcon{
+    visibility: visible;
+}
+
+.list p {
+    width: 80%;
+    height: auto;
+    color: #C4DFE6;
+    text-align: left;
+    padding: 10px;
+    padding-left: 0;
+    margin: 0;
+    margin-left: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation on Home Page */
+
+#navigationBar {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+#navButtons {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#navButtons figure {
+    width: 100px;
+    height: auto;
+}
+
+#emergency {
+    width: 20%;
+}
+
+#navigationBar figure img {
+    width: auto;
+    height: 60px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+#navigationBar figure img:hover {
+    transform: scale(1.05, 1.05);
+}
+
+#navigationBar figure img:active {
+    transform: scale(0.95, 0.95)
+}
+
+/* Health */
+
+#healthSection {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#healthData {
+    width: 60%;
+    height: auto;
+}
+
+#routine {
+    height: 250px;
+    background-color: #003B46;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+#routineHeader {
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    position: relative;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+#routineHeader h2 {
+    margin: 0;
+    margin-left: 30px;
+    height: auto;
+    color: white;
+}
+
+#routineHeader figure {
+    margin: 0 20px;
+    height: auto;
+}
+
+#routineHeader figure, #routineHeader h2 {
+    margin-top: 10px;
+}
+
+#routineContent {
+    display: flex;
+    justify-content: center;
+}
+
+#routineContent.hide {
+    visibility: hidden;
+}
+
+.routineDay {
+    margin: 0 20px;
+    color: #C4DFE6;
+}
+
+#change {
+    position: absolute;
+    right: 20px;
+    background-color: #C4DFE6;
+    color: #003B46;
+    border: none;
+    width: 120px;
+    height: 45px;
+    border-radius: 50px;
+    outline: none;
+    box-shadow: 0px 3px 5px #003B46;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+#change:hover {
+    transform: scale(1.05, 1.05)
+}
+
+#change:active {
+    transform: scale(0.95, 0.95)
+}
+
+#bglGraph {
+    height: 250px;
+    background-color: #003B46;
+    border-radius: 20px;
+}
+
+#bglHistory {
+    width: 864px;
+    height: 250px;
+    margin: 0;
+}
+
+#bglHistory img {
+    width: auto;
+    height: 100%;
+    border-radius: 20px;
+}
+
+#account {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#account figure {
+    margin-bottom: 0;
+}
+
+/* Meal Planner */
+
+.pageDisplay {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pageDisplay section {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.backAndHeading {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionHeading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.back {
+    position: absolute;
+    left: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.back .leftArrow {
+    border-right: 40px solid #C4DFE6;
+}
+
+.back p {
+    margin-left: 15px;
+    color: #C4DFE6
+}
+
+.chooseMealHome {
+    width: 30%;
+    height: 360px;
+    background-color: #C4DFE6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.chooseMealHome figure {
+    width: 100%;
+    margin: 0;
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+.chooseMealHome figure img {
+    width: 30%;
+    height: auto
+}
+
+.chooseMealHome figure .selectedMealImage {
+    width: 100%;
+    height: auto;
+}
+
+
+.chooseMealHome figure p {
+    text-align: center;
+}
+
+.chooseMealHome div {
+    background-color: #003B46;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.done {
+    width: 250px;
+    height: 50px;
+    background-color: #003B46;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    outline: none;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.done:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.done:active {
+    transform: scale(0.95, 0.95);
+}
+
+    /* Home Button */
+
+.homeButton {
+    width: 30%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.homeButton img {
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.homeButton img:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.homeButton img:active {
+    transform: scale(0.95, 0.95);
+}
+
+    /* Select Meal */
+
+.pageDisplay {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pageDisplay h1 {
+    font-size: 40px;
+}
+
+.filter {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.filter button {
+    width: 100px;
+    height: 50px;
+    margin: 0 10px;
+    background-color: #66A5AD;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+.filter .active {
+    background-color: #003B46;
+}
+
+.availableMeals {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+.leftArrow, .rightArrow {
+    width: 0; 
+    height: 0; 
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.rightArrow {
+    border-left: 40px solid #003B46;
+}
+
+.leftArrow {
+    border-right: 40px solid #003B46;
+}
+
+.rightArrow:hover, .leftArrow:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.rightArrow:active, .leftArrow:active {
+    transform: scale(0.95, 0.95);
+}
+
+.foodCard {
+    width: 40%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #C4DFE6;
+    border-radius: 25px;
+}
+
+.mealImage {
+    width: 100%;
+    flex: 3;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: 0;
+    cursor: pointer;
+}
+
+.mealImage img {
+    width: 100%;
+    height: auto;
+}
+
+.foodName {
+    width: 100%;
+    background-color: #003B46;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    position: relative;
+    flex: 1;
+}
+
+.showOptions {
+    flex: 4;
+    justify-content: flex-start;
+}
+
+.showOptions .arrow-down {
+    margin-top: 20px;
+}
+
+.mealInfo {
+    width: 80%;
+    margin-top: 10px;
+    color: white;
+    overflow-y: auto;
+}
+
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid white;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.arrow-up:hover, .arrow-down:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.arrow-up:active, .arrow-down:active {
+    transform: scale(0.95, 0.95);
+}
+
+.foodName p {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: white;
+}
+
+.seeRecipe {
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background-color: #66A5AD;
+    color: white;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.seeRecipe:hover {
+    transform: scale(1.05, 1.05)
+}
+
+.seeRecipe:active {
+    transform: scale(0.95, 0.95);
+}
+
+    /* Recipe */
+
+#recipeSection {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+}
+
+#mealImage {
+    width: 40%;
+    margin: 0;
+    height: 200px;
+}
+
+#mealImage figure {
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+}
+
+#mealImage figure img {
+    width: 70%;
+    height: auto;
+    border-radius: 20px;
+}
+
+#sendButton {
+    margin-top: 20px;
+    width: 300px;
+    height: 100px;
+    font-size: 15px;
+    color: #C4DFE6;
+    font-weight: bold;
+    background-color: #003B46;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    padding: 0 30px;
+}
+
+#sendButton:hover {
+    transform: scale(1.05, 1.05)
+}
+
+#sendButton:active {
+    transform: scale(0.95, 0.95)
+}
+
+#recipeInfoContainer {
+    font-family: Montserrat;
+    width: 50%;
+    height: 75vh;
+    background-color: #003B46;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#recipeInfoContainer h3 {
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #C4DFE6;
+}
+
+.recipeInfo {
+    height: 85%;
+    overflow-y: scroll;
+    padding: 0 30px;
+}
+
+.recipeInfo p {
+    text-align: left;
+}
+
+.step {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.step:last-child {
+    margin-bottom: 0;
+}
+
+.stepNumber {
+    font-size: 30px;
+    font-weight: bold;
+    color: #C4DFE6;
+    margin: 0;
+    width: 30px;
+}
+
+.stepDesc {
+    color: #66A5AD;
+    margin: 0;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+
+
+/* Appointment */
+
+.healthProfessionals {
+    border-bottom: 2px solid #003B46;
+    height: 50vh;
+    width: 80%;
+    overflow-y: scroll;
+}
+
+.professional {
+    background-color: #003B46;
+    border-radius: 20px;
+    width: 60%;
+    height: 200px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+.professional:hover {
+    transform: scale(1.02);
+}
+
+.professional:active {
+    transform: scale(0.98);
+}
+
+.HPInfo {
+    color: white;
+    text-align: left;
+}
+
+.appointmentArrow {
+    position: absolute;
+    right: 30px;
+    border-left: 40px solid white
+}
+
+/* Book Appointment */
+
+#dateSelection {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#professionalImage {
+    margin: 16px 0;
+}
+
+#professionalImage img {
+    width: 70%;
+    height: auto;
+}
+
+#professionalImage p {
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: white;
+}
+
+#selectDate {
+    width: 80%;
+    height: 150px;
+    margin: 0 20px;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #003B46;
+    color: white;
+    border-radius: 60px;
+    position: relative;
+}
+
+#selectDate p {
+    font-size: 25px;
+}
+
+#selectDate .leftArrow {
+    border-right: 40px solid white;
+    position: absolute;
+    left: 30px;
+}
+
+#selectDate .rightArrow {
+    border-left: 40px solid white;
+    position: absolute;
+    right: 30px;
+}
+
+#calendarIcon {
+    cursor: pointer;
+}
+
+#bookAppointment {
+    width: 380px;
+    height: 75px;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #003B46;
+    color: white;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    outline: none;
+}
+
+#bookAppointment:active {
+    transform: scale(0.95, 0.95)
+}
+
+/* Time Slots */
+
+#timeSelect {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    color: white;
+}
+
+.timeAvailable {
+    width: 90px;
+    height: auto;
+    margin: 0 10px;
+}
+
+.timeSlot {
+    width: 100%;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.available .timeSlot {
+    background-color: #003B46;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.not-available .timeSlot {
+    background-color: #C4DFE6;
+}
+
+.available .timeSlot:hover {
+    transform: scale(1.05, 1.05)
+}
+
+.available .timeSlot:active {
+    transform: scale(0.95, 0.95)
+}
+
+.available .slotSelected {
+    background-color: green;
+}
+
+/* Confirm Booking */
+
+.confirmBookingInfo {
+    width: 100%;
+    height: auto;
+}
+
+.confirmProfessional {
+    width: 60%;
+}
+
+.confirmProfessional:hover {
+    transform: scale(1, 1)
+}
+
+.confirmProfessional:active {
+    transform: scale(1, 1)
+}
+
+.confirmationButtons {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.confirmationButtons button {
+    width: 30%;
+    height: 80px;
+    transition: all .2s ease-in-out;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    margin: 0px 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+.confirmationButtons button:hover {
+    transform: scale(1.05, 1.05)
+}
+
+.confirmationButtons button:active {
+    transform: scale(0.95, 0.95)
+}
+
+.confirmButton {
+    border: none;
+    background-color: #003B46;
+    color: white;
+}
+
+.cancelButton {
+    background: none;
+    border: 3px solid #003B46;
+    color: #003B46;
+}
+
+/* Emergency Call */
+
+#calling {
+    font-size: 40px;
+    font-weight: bold;
+    color: #003B46;
+}
+
+#calling span {
+    color: #C4DFE6;
+}
+
+#cancelCall {
+    width: 200px;
+    height: 60px;
+    background-color: #C4DFE6;
+    border-radius: 30px;
+    color: #07575B;
+    font-weight: bold;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    box-shadow: 1px 3px 5px #003B46;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+#cancelCall:hover {
+    transform: scale(1.05, 1.05);
+    background-color: #07575B;
+    color: white;
+}
+
+#cancelCall:active {
+    transform: scale(0.95, 0.95)
+}

@@ -1,0 +1,215 @@
+.editRoutine-modal {
+    background-color: rgb(0, 59, 70, 0.6);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container {
+    width: 85%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(196, 223, 230, 0.9);
+    border-radius: 50px;
+}
+
+.modal-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 80px;
+    color: #003B46;
+}
+
+.currentRoutine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.dailyRoutine {
+    width: 30%;
+    height: auto;
+    margin: 0 20px;
+}
+
+.currentRoutine .routineDay {
+    height: 200px;
+    overflow-y: scroll;
+    margin: 0;
+}
+
+.currentRoutine button {
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.currentRoutine button:hover {
+    transform: scale(1.05, 1.05)
+}
+
+.currentRoutine button:active {
+    transform: scale(0.95, 0.95)
+}
+
+.currentRoutine .routineDay h2 {
+    color: #07575B;
+    text-decoration: underline;
+}
+
+.currentRoutine .routineDay p {
+    color: black
+}
+
+.medications {
+    max-height: 80px;
+    overflow-y: scroll;
+}
+
+.medications p {
+    margin-top: 0;
+}
+
+.medications-edit {
+    width: 100%;
+    max-height: 130px;
+    overflow-y: scroll;
+    margin-top: 30px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.medications-edit p {
+    margin: 0;
+}
+
+.med-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.med-container:last-child {
+    margin-bottom: 0;
+}
+
+.med-container .removeMedication {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 1px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ED5F5F;
+    box-shadow: 1px 3px 5px #07575B;
+    outline: none;
+    color: white;
+    font-weight: bolder;
+}
+
+.med-container p {
+    max-width: 75px;
+    overflow-x: scroll;
+}
+
+.editMedForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.addMedButton {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #07575B;
+    border: none;
+    color: white;
+    margin: 10px auto;
+    outline: none;
+}
+
+.addMedInput {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #003B46;
+}
+
+.modal-close {
+    position: absolute;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 25px;
+    background-color: #003B46;
+    color: white;
+    border: none;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    outline: none;
+}
+
+.modal-close:hover {
+    transform: scale(1.05, 1.05)
+}
+
+.modal-close:active {
+    transform: scale(0.95, 0.95)
+}
+
+.modal-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.modal-buttons button {
+    width: 200px;
+    height: 60px;
+    border-radius: 40px;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.modal-buttons button:hover {
+    transform: scale(1.05, 1.05)
+}
+
+.modal-buttons button:active {
+    transform: scale(0.95, 0.95)
+}
+
+.modal-save {
+    background-color: #003B46;
+    border: none;
+    color: white;
+}
+
+.modal-cancel {
+    border: 2px solid#003B46;
+    background: none;
+    color: #003B46;
+}

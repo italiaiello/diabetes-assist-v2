@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "gender": "Female",
+      "first_name": "Alice",
+      "last_name": "Manini",
+      "specialty": "Diabetes Health Professional",
+      "location": "Ashfield Health Centre",
+      "image": "AliceManini.png",
+      "availableTimes": { "10": "Yes", "11": "No", "12": "Yes", "13": "No", "14": "Yes", "15": "Yes", "16": "No" }
+    }, 
+    {
+      "id": 2,
+      "gender": "Female",
+      "first_name": "Camille",
+      "last_name": "Green",
+      "specialty": "Diabetes Health Professional",
+      "location": "Camille's Health Centre",
+      "image": "CamilleGreen.png",
+      "availableTimes": { "10": "Yes", "11": "Yes", "12": "No", "13": "No", "14": "Yes", "15": "No", "16": "Yes" }
+    },
+    {
+        "id": 3,
+        "gender": "Female",
+        "first_name": "Danielle",
+        "last_name": "Brown",
+        "specialty": "Psychologist",
+        "location": "Strathfield Hospital",
+        "image": "DanielleBrown.png",
+        "availableTimes": { "10": "No", "11": "No", "12": "Yes", "13": "Yes", "14": "Yes", "15": "Yes", "16": "No" }
+    },
+    {
+        "id": 4,
+        "gender": "Male",
+        "first_name": "Squires",
+        "last_name": "Brown",
+        "specialty": "Diabetes Health Professional",
+        "location": "Camille's Health Centre",
+        "image": "SquiresBrown.png",
+        "availableTimes": { "10": "No", "11": "Yes", "12": "Yes", "13": "No", "14": "No", "15": "Yes", "16": "Yes" }
+    }
+]
